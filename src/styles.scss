@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+.btn-primary{
+    background-color: rgb(245, 207, 36)!important;
+    border-color: rgb(245, 207, 36)!important;;
+    border-radius: 0;
+    color:black!important
+}
+
+
+.btn-primary:hover{
+    background-color: black!important; /* Replace 'your_desired_color' with the color you want */
+    transition: ease-in-out 0.3s; /* You can adjust the transition duration (0.3s in this example) */
+    border-color: black!important;
+    color:rgb(245, 207, 36)!important;
+}
+
+body,html{
+    background-color: rgb(255, 255, 255)!important;
+    height: 100vh; 
+    // width: 100vw;
+    padding:0!important;
+    
+    font-family: 'Noto Sans', sans-serif;    
+  // background-image: url('assets/image/1310913.jpg');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center; /* Center the background image */
+
+
+}
+
+.line {
+    margin-top:5px;
+    width: 50%; /* Adjust the width as needed */
+    height: 10px; /* Set the height of the line */
+    background-color: rgb(245, 207, 36); /* Set the desired color using a hex code, RGB, or color name */
+  }

@@ -1,0 +1,39 @@
+<hr>
+<div class="text-center mt-5">
+    <h4 class="fw-bold">Συχνές υπηρεσίες</h4>
+
+    <div class="line " style="margin:0 auto;width: 15%;"></div>
+</div>
+
+
+<ngu-carousel #myCarousel class="mt-5" [inputs]="carouselConfig" [dataSource]="carouselItems">
+	<div *nguCarouselDef="let item;" class="item">
+
+        <div class="image-container">
+            <img id="service" src="{{item.img}}" class="img-fluid" alt="Your Image">
+            <div class="text-over-image" style="top:50%;left:37%;text-align: left!important;">
+                <div class="">
+
+                    <h1 class=" fw-bold mt-3">{{item.text}}
+                    </h1>
+                    <p>{{item.desc}}</p>
+                </div>
+                <button class="btn btn-primary fw-bold"><i
+                        class="fa-solid fa-circle-info me-1"></i>Περισσότερα</button>
+            </div>
+
+        </div>
+
+
+
+
+	</div>
+	<button NguCarouselNext class="rightRs">></button>
+	<button NguCarouselPrev class="leftRs" style="z-index: 999;"><</button>
+	<ul class="myPoint" NguCarouselPoint>
+		<li *ngFor="let j of myCarousel.pointNumbers; let a = index" [class.active]="a==myCarousel.activePoint" (click)="myCarousel.moveTo(j)"></li>
+	</ul>
+    <br>
+</ngu-carousel>
+
+

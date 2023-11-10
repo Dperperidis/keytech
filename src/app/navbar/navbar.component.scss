@@ -1,0 +1,73 @@
+@media all and (min-width: 992px) {
+    .navbar .dropdown-menu-end {
+        right: 0;
+        left: auto;
+   
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        margin-top: 0;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: #fff;
+    }
+
+    .navbar .dropdown-menu.fade-down {
+        top: 80%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+    }
+
+    .navbar .dropdown-menu.fade-up {
+        top: 180%;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transition: .3s;
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+        transform: rotateX(0deg);
+        
+    }
+    .container{
+        max-width: 1440px!important;
+    }
+}
+
+.dropdown > a{
+    color:white
+    !important
+}
+li>a:hover  {
+    text-decoration: underline;
+    color: rgb(245, 207, 36)!important; /* Replace 'your_desired_color' with the color you want */
+    transition: all 0.3s; /* You can adjust the transition duration (0.3s in this example) */
+  }
+
+  .dropdown-menu a {
+    list-style: none; /* Remove the default bullets */
+    margin-left: 20px; /* Adjust the margin to control the distance between the bullet and the text */
+    position: relative;
+    
+  }
+  
+  .dropdown-menu a::before {
+    content: "\2022"; /* Unicode character for a bullet (•) */
+    color: white; /* Set the color of the bullet to white */
+    display: inline-block;
+    width: 1em; /* Adjust the width of the bullet as needed */
+    margin-left: -1em; /* Adjust the margin to align the bullet with the text */
+    position: absolute;
+  }
+
+  .dropdown-item:hover {
+    color: rgb(245, 207, 36)!important;
+    background: none!important;
+    width: max-content!important;
+}

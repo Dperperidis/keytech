@@ -1,0 +1,44 @@
+.image-container {
+    position: relative;
+    display: inline-block; /* Ensures the container fits the image size */
+    width: 100%!important;
+}
+
+.text-over-image {
+    position: absolute;
+    top: 40%; /* Adjust the vertical position */
+    left: 35%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%); /* Center the text within the container */
+    color: white; /* Text color */
+    padding: 10px; /* Adjust padding to create a better layout */
+}
+
+
+
+.text-over-image p {
+    font-size: 16px; /* Adjust the font size */
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+i{
+    color: rgb(255, 255, 255)!important; 
+    padding:10px;
+    background-color: rgb(245, 207, 36)!important; ;
+}
+
+.card{
+    border:none;
+    border-radius: 0%;
+}
+
+.list-group-item{
+    margin-top:10px;
+}
+
+::ng-deep.animate__animated .animate__fadeIn .animate__delay-1s {
+    --animate-duration: 0.1s!important;
+  }

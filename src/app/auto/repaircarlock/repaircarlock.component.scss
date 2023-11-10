@@ -1,0 +1,26 @@
+.image-container {
+    position: relative;
+    display: inline-block; /* Ensures the container fits the image size */
+    width: 100%!important;
+}
+
+.text-over-image {
+    position: absolute;
+    top: 50%; /* Adjust the vertical position */
+    left: 50%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%); /* Center the text within the container */
+    color: white; /* Text color */
+    padding: 10px; /* Adjust padding to create a better layout */
+}
+
+
+
+.text-over-image p {
+    font-size: 16px; /* Adjust the font size */
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
